@@ -8,7 +8,7 @@ MusicWiki is a comprehensive, unofficial Last.fm application that offers in-dept
 ## Technologies Used
 
 
-| technologies used | README |
+| technologies used | Links |
 | ------ | ------ |
 | Kotlin | https://kotlinlang.org/ |
 | XML | https://www.xml.com/ |
