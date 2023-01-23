@@ -1,15 +1,15 @@
 # MusicWiki
 
 MusicWiki is a comprehensive, unofficial Last.fm application that offers in-depth information and insights into a wide variety of music genres. The app is designed to provide users with detailed information about the different albums, artists, and tracks that are associated with each genre.
- MusicWiki aims to be the ultimate destination for music lovers to discover, learn and enjoy the different genres of music in one place.
+ - MusicWiki aims to be the ultimate destination for music lovers to discover, learn and enjoy the different genres of music in one place.
 
 ![807](https://user-images.githubusercontent.com/72141924/214014736-d3656f01-2437-4419-aec4-85606da31571.png)
 
 ## Technologies Used
--Kotlin
--XML
--Last.fm API
--Retrofit
+- Kotlin
+- XML
+- Last.fm API
+- Retrofit
 
 ## How to use Retrofit in Android
 
@@ -19,7 +19,7 @@ Add the Retrofit library to your app-level build.gradle file:
 implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 ```
 
--Create a Retrofit instance in your app's initialization code:
+- Create a Retrofit instance in your app's initialization code:
 
 ```sh
 val retrofit = Retrofit.Builder()
@@ -28,7 +28,7 @@ val retrofit = Retrofit.Builder()
     .build()
 ```
     
--Create an interface for the API you want to call:
+- Create an interface for the API you want to call:
 
 ```sh
 interface LastFmService {
@@ -37,13 +37,13 @@ interface LastFmService {
 } 
 ```
     
--Use the retrofit instance to create a concrete implementation of the interface:
+- Use the retrofit instance to create a concrete implementation of the interface:
 
 ```sh
 val lastFm = retrofit.create(LastFmService::class.java)
 ```
     
--Use the concrete implementation to make a network request:
+- Use the concrete implementation to make a network request:
 
 ```sh
 val call = lastFm.getGenres("tag.getTopTags", "YOUR_API_KEY")
@@ -64,7 +64,7 @@ call.enqueue(object : Callback<Genres> {
 To implement the Last.fm API in a Kotlin app, you will need to follow these steps:
 
 
--Register for an API key on the Last.fm website.
+- Register for an API key on the Last.fm website.
 
 
 Add the appropriate dependencies to your app's build.gradle file. For example, if you want to use the Retrofit library to handle the API calls, you would add this line:
@@ -74,7 +74,7 @@ Add the appropriate dependencies to your app's build.gradle file. For example, i
 implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 ```
 
--Create a service interface in your app to define the API endpoints you want to use. For example, you might define a method for searching for an artist like this:
+- Create a service interface in your app to define the API endpoints you want to use. For example, you might define a method for searching for an artist like this:
 
 ```sh
 interface LastFmService {
@@ -82,7 +82,7 @@ interface LastFmService {
     fun searchArtists(@Query("artist") artist: String): Call<ArtistSearchResult>
 }
 ```
--Use Retrofit to create an instance of the service interface and set the base URL for the Last.fm API:
+- Use Retrofit to create an instance of the service interface and set the base URL for the Last.fm API:
 ```sh
 val retrofit = Retrofit.Builder()
     .baseUrl("http://ws.audioscrobbler.com/2.0/")
