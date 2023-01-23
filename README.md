@@ -6,10 +6,15 @@ MusicWiki is a comprehensive, unofficial Last.fm application that offers in-dept
 ![807](https://user-images.githubusercontent.com/72141924/214014736-d3656f01-2437-4419-aec4-85606da31571.png)
 
 ## Technologies Used
-- Kotlin
-- XML
-- Last.fm API
-- Retrofit
+
+
+| technologies used | README |
+| ------ | ------ |
+| Kotlin | https://kotlinlang.org/ |
+| XML | https://www.xml.com/ |
+| Retrofit | https://square.github.io/retrofit/ |
+| Last.fm API | https://www.last.fm/api |
+
 
 ## How to use Retrofit in Android
 
