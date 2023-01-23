@@ -16,9 +16,11 @@ Add the Retrofit library to your app-level build.gradle file:
 
 ```
 implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
 ```
 
 Create a Retrofit instance in your app's initialization code:
+
 ```
 val retrofit = Retrofit.Builder()
     .baseUrl("https://ws.audioscrobbler.com/")
@@ -26,22 +28,21 @@ val retrofit = Retrofit.Builder()
     .build()
     ```
     
-Create an interface for the API you want to call:
+-Create an interface for the API you want to call:
 
 ```
 interface LastFmService {
     @GET("/2.0/")
     fun getGenres(@Query("method") method: String, @Query("api_key") apiKey: String): Call<Genres>
-}
-    
+} 
     ```
-Use the retrofit instance to create a concrete implementation of the interface:
+-Use the retrofit instance to create a concrete implementation of the interface:
 
     ```
 val lastFm = retrofit.create(LastFmService::class.java)
     ```
     
-Use the concrete implementation to make a network request:
+-Use the concrete implementation to make a network request:
 ```
 val call = lastFm.getGenres("tag.getTopTags", "YOUR_API_KEY")
 call.enqueue(object : Callback<Genres> {
