@@ -115,5 +115,14 @@ call.enqueue(object : Callback<ArtistSearchResult> {
 It is important to note that this is just an example of how to implement the Last.fm API in a Kotlin app using the Retrofit library and you may need to add more code or change the existing code depending on your specific use case.
 
 
+## references
+
+- https://github.com/mateuszteteruk/last-fm-library
+- https://github.com/guptajiradhey/Music-Genre/tree/master/app/src/main/java/com/example/assignment
+- https://stackoverflow.com/questions/55978243/last-fm-api-returns-same-white-star-image-for-all-artists
+- https://www.last.fm/api/intro
+- https://www.last.fm/api/mobileauth
+
+
 
 
