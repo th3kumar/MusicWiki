@@ -4,7 +4,7 @@ MusicWiki is an unofficial Last.fm app that contains information about different
 
 ![807](https://user-images.githubusercontent.com/72141924/214014736-d3656f01-2437-4419-aec4-85606da31571.png)
 
-##Technologies Used
+## Technologies Used
 -Kotlin
 -XML
 -Last.fm API
@@ -16,18 +16,16 @@ Add the Retrofit library to your app-level build.gradle file:
 
 ```sh
 implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-
 ```
 
-Create a Retrofit instance in your app's initialization code:
+-Create a Retrofit instance in your app's initialization code:
 
 ```sh
 val retrofit = Retrofit.Builder()
     .baseUrl("https://ws.audioscrobbler.com/")
     .addConverterFactory(GsonConverterFactory.create())
     .build()
-    
-    ```
+```
     
 -Create an interface for the API you want to call:
 
@@ -36,13 +34,13 @@ interface LastFmService {
     @GET("/2.0/")
     fun getGenres(@Query("method") method: String, @Query("api_key") apiKey: String): Call<Genres>
 } 
-    ```
+```
     
 -Use the retrofit instance to create a concrete implementation of the interface:
 
-    ```sh
+```sh
 val lastFm = retrofit.create(LastFmService::class.java)
-    ```
+```
     
 -Use the concrete implementation to make a network request:
 
@@ -58,9 +56,9 @@ call.enqueue(object : Callback<Genres> {
         // handle failure
     }
 })
-    ```
+```
     
-    ## How to use Last.Fm API in Android
+ ## How to use Last.Fm API in Android
     
 -Register for an API key at https://www.last.fm/api
 -Use the API key in your Retrofit interface as shown in the example above
