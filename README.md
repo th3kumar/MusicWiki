@@ -1,6 +1,7 @@
 # MusicWiki
 
-MusicWiki is an unofficial Last.fm app that contains information about different music genres, the albums, artists and tracks listed under the genre.
+MusicWiki is a comprehensive, unofficial Last.fm application that offers in-depth information and insights into a wide variety of music genres. The app is designed to provide users with detailed information about the different albums, artists, and tracks that are associated with each genre.
+ MusicWiki aims to be the ultimate destination for music lovers to discover, learn and enjoy the different genres of music in one place.
 
 ![807](https://user-images.githubusercontent.com/72141924/214014736-d3656f01-2437-4419-aec4-85606da31571.png)
 
